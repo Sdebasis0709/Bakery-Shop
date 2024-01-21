@@ -1,0 +1,441 @@
+body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    background-color: #ffffff; 
+    color: #000000; 
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 1000;
+    
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name h1 {
+    font-size: 2em; 
+}
+
+.name span {
+    color: green; 
+    font-size: 60px;
+}
+.glow {
+    font-size: 80px;
+    color: #000000;
+    text-align: center;
+}
+  
+
+.nav-items ul {
+    list-style-type: none;
+    display: flex;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 1000;
+}
+
+.nav-items li {
+    margin: 0 25px; 
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 22px;
+    position: relative;
+    transition: color 0.3s ease-in-out; 
+}
+
+.nav-items li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease-in-out; 
+}
+
+.nav-items li:hover a {
+    color: #12d76e;
+}
+
+.nav-items li:hover a::after {
+    width: 100%; 
+    background-color: #12d76e; 
+}
+
+
+.Home {
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    display: none;
+}
+.container {
+    height: 500px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.container {
+    height: 500px;
+    width: 45%;
+    overflow: hidden;
+}
+.container>h2{
+    color: chartreuse;
+    font-size: 30px;
+    font-weight: 1000;
+    margin-left: 27%;
+}
+.about-content>p{
+    font-size: 18px;
+    font-weight: 1000;
+    margin-left: 10px;
+}
+.content {
+    padding: 20px;
+    text-align: center; 
+    position: relative;
+    height: 500px;
+    width: 45%;
+    margin-top: -505px;
+    left: 50%;
+}
+.image-container{
+    position: relative;
+    height: 490px;
+    width: 50%;
+    margin-top: -505px;
+    left: 49%;
+    top:10px;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.img4{
+    margin-right: 20px;
+}
+.Dishes{
+    height: 950px;
+    width: 99%;
+    margin-top: 80px;
+}
+.checked {
+    color: orange;
+  }
+.first-row{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+}
+
+.second-row{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+.btn{
+    margin-left: 30%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+      background-color: #fafafa; 
+      color: #4CAF50;
+      font-weight: 1000;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+.feature-body {
+    height: 100vh; 
+    width: 99%;
+    background-image: url("./cup-feature.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.feature-body-text{
+    font-size: 50px;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.feature-body-text>span{
+    color: gold;
+    -webkit-text-stroke: 3px gold;
+}
+#myDIV {
+    display: none;
+}
+.feature-body .button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #12d76e;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+#myDIV span {
+    text-align: justify;
+    width: 1000px;
+    display: block;
+    color: rgb(255, 255, 255); 
+    font-size: 18px;
+    font-style: italic;
+    
+    font-weight: 1000;
+    padding: 10px;  
+}
+#myDIV .offers {
+    height: 310px;
+    width: 600px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: #fbff00 1px;
+    font-size: 25px;
+    font-weight: 1000;
+    padding: 10px;
+    margin-left: 180px;
+}
+#myDIV .offers span{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 1000;
+}
+h4 {
+    position: absolute;
+    color: #e3ed15;
+    font-size: 34px;
+    -webkit-text-stroke: 1px rgb(222, 36, 70) ;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 300px;
+    margin-left: 800px;
+    overflow: hidden; 
+    border-right: 2px solid #333;
+    white-space: nowrap;
+    animation: typing 5s infinite;
+    font-family: 'Lobster', sans-serif;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 35%;
+    }
+}
+
+.chefs{
+    height: 500px;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+}
+.chefs>.title{
+    position: absolute;
+    left: 550px;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    font-size: 40px;
+    -webkit-text-stroke: #000000 1px;
+}
+.chef-left {
+    height: 400px;
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 2%;  
+    overflow: hidden; 
+    white-space: pre-line; 
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: justify;
+    padding: 10px;
+}
+.chef-right {
+    height: 400px;
+    width: 55%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chef1, .chef2, .chef3 {
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.chef1 img, .chef2 img, .chef3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 0, 0, 0.7);
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.chef1:hover .overlay, .chef2:hover .overlay, .chef3:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h2 {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+.footer-section h2:hover {
+    color: #f50a0a;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-section a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.footer-section a:hover{
+    color: #e60073;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
